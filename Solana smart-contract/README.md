@@ -28,7 +28,7 @@ This is a comprehensive multi-token lottery program on Solana that supports both
 
 ```
 lottery-program/
-├── programs/lottery/
+├── programs/bclot/
 │   ├── src/
 │   │   ├── lib.rs              # Main program logic
 │   │   ├── price_feeds.rs      # Switchboard/Pyth integration
@@ -37,7 +37,7 @@ lottery-program/
 │   │   └── automation.rs       # Clockwork automation
 │   └── Cargo.toml
 ├── tests/
-│   └── lottery.ts              # Comprehensive test suite
+│   └── bclot.ts              # Comprehensive test suite
 ├── target/
 ├── Anchor.toml
 └── package.json

@@ -2,7 +2,7 @@
 [package]
 name = "bclot"
 version = "0.1.0"
-description = "Multi-token lottery program on Solana"
+description = "Multi-token raffle program on Solana"
 edition = "2021"
 
 [lib]
@@ -20,3 +20,8 @@ idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
 [dependencies]
 anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
 anchor-spl = "0.31.1"
+rust_decimal = "1.38.0"
+switchboard-on-demand = "0.10.3"
+orao-solana-vrf-cb = { version = "0.3.3", default-features = false, features = ["cpi"] }
+rand = { version = "0.8", optional = true }
+bytemuck = { version = "1.18", features = ["derive"] }
